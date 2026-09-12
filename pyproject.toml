@@ -1,0 +1,19 @@
+[project]
+name = "fsds-genai-agenticai-ws"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "gradio>=6.26.0",
+    "image>=1.5.33",
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "ollama>=0.6.2",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
+    "tiktoken>=0.13.0",
+]
