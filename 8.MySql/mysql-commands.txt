@@ -1,0 +1,48 @@
+# command line clear:system cls
+# show databases;
+#\q to quit command line 
+#create database database_one;
+# use database_one; --> Database chanegd to this
+
+# create table
+create table student(
+name varchar(30),
+id int not null primary key,
+address varchar(50),
+marks int);
+
+#show tables;
+#desc student;
+# insert into student(marks,id,name,address) values(90,12,'Mouli','Hyderabad');
+insert into student(marks,id,name,address) values(91,13,'Manish','Bangalore');
+insert into student(marks,id,name,address) values(92,14,'Neethu','Delhi');
+#insert multiple records at once:
+
+insert into student values(93,15,'Suma','Pune'),(94,16,'Sravan','Bambay');--Error order is not correct 
+
+insert into student values('Suma',15,'Pune',93),('Sravan',16,'Bambay',94);
+
+insert into student(marks,id, name,address) values (78,1,'Ramcharan','Bangalore'),(80,2,'Srinivas','Bangalore');
+
+#alter table student add phoneNo int;
+#update student set phoneNo=123;
+
+
+# 
+create table people(
+id int primary key,
+name varchar(100) not null,
+gender char(1) not null
+);
+
+insert people(id,name,gender) values
+(1,'kathy','f'),(2,'John','m'),(3,'Paul','m'),(4,'Kim','f');
+
+
+create table pets(
+id int auto_increment primary key,
+ownerId int not null,
+name varchar(100) not null,
+color varchar(100) not null
+);
+
