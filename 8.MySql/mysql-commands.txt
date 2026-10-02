@@ -46,3 +46,41 @@ name varchar(100) not null,
 color varchar(100) not null
 );
 
+insert pets(ownerId,name,color) values
+(1,'Rover','beige'),(2,'Bubbles','purple'),(3,'Spot','Black and White'),
+(1,'Rover2','white');
+
+# alter table student modify column name varchar(60);
+# alter table student drop column phoneNo;
+
+=============================================================
+select * from dataset_1 d ;
+
+select * from dataset_1 d limit 10;
+
+select distinct passanger from  dataset_1 d ;
+
+select weather, temperature from dataset_1 d ;
+
+select * from dataset_1 d where d.destination = 'Home';
+
+select * from dataset_1 d ORDER by d.coupon ;
+
+select destination as Destination from dataset_1 d ;
+
+select d.occupation from dataset_1 d group by d.occupation
+
+select weather, avg(temperature) as avg_temp from dataset_1 group by weather;
+
+select weather, COUNT (weather) from dataset_1 group by weather;
+
+select weather ,count(temperature) as count_temp from dataset_1 d group by weather;
+
+select weather , count(distinct temperature) as dis_count_temp from dataset_1 d  GROUP by weather;
+
+select weather , sum(temperature) as sum_temp from dataset_1 d GROUP by weather;
+
+select weather, min(temperature) as min_temp from dataset_1 d  GROUP by weather;
+
+select weather , max(temperature) as max_temp from dataset_1 d  GROUP  by weather;
+
